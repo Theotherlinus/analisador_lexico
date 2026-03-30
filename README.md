@@ -11,11 +11,15 @@ este projeto implementa um analisador lexico simples em c.
 
 no terminal, entre na pasta do projeto:
 
+```bash
 cd "/home/linus-501512/Área de trabalho/2026.1/compiladores/analisador_lexico"
+```
 
 depois compile:
 
+```bash
 gcc -Wall -Wextra -o analisador main.c
+```
 
 ## como executar
 
@@ -23,11 +27,14 @@ o programa le o arquivo `arquivo.txt` na mesma pasta do projeto.
 
 execute com:
 
+```bash
 ./analisador
-
+```
 se quiser salvar a saida em um arquivo:
 
+```bash
 ./analisador > resultado_teste.txt
+```
 
 ## exemplo de entrada
 
