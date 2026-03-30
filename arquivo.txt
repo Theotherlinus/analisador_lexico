@@ -1,12 +1,10 @@
-void funcao() {
-    int lista[5] = {1, 2, 3, 4, 5];
-    
-    for (int i = 0; i < 5; i++) {
-        printf("%d\n", lista[i]);
-    
-    if (lista[0] == 1] {
-        printf("Primeiro é 1");
+int main() {
+    int a, b;
+    float valor = 3.14;
+    char *texto = "ola";
+    vetor[2] = a + b;
+    if (valor >= 1 && valor != 0) {
+        a++;
     }
-
-    )
+    return a;
 }
