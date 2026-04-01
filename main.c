@@ -50,7 +50,7 @@ int ler_caractere(FILE *arquivo, int *linha, int *coluna) {
 
     return c;
 }
-
+//devolucao de dados
 void devolver_caractere(int c, FILE *arquivo, int *linha, int *coluna) {
     if (c == EOF) return;
 
@@ -111,7 +111,7 @@ int main(void) {
     int total_tokens = 0;
     char texto[256], pilha[256] = {0};
     Token tokens[MAX_TOKENS];
-
+//leitura do arquivo
     while ((caractere = ler_caractere(arquivo, &linha, &coluna)) != EOF) {
         int i = 0;
         int linha_token = linha;
@@ -123,7 +123,7 @@ int main(void) {
             int fechado = 0, linha_inicial = linha_token, coluna_inicial = coluna_token;
 
             texto[i++] = '"';
-
+//leitura de literais
             while ((caractere = ler_caractere(arquivo, &linha, &coluna)) != EOF && i < 255) {
                 texto[i++] = (char)caractere;
 
@@ -154,7 +154,7 @@ int main(void) {
 
         if (caractere == '(' || caractere == '{' || caractere == '[') {
             char lexema[2] = {(char)caractere, '\0'};
-
+//verificacao de delimitadores
             if (topo < 255) {
                 pilha[++topo] = (char)caractere;
                 linhas[topo] = linha_token;
@@ -189,7 +189,7 @@ int main(void) {
             }
             continue;
         }
-
+//verificacao de separadores
         if (caractere == ';' || caractere == ',' || caractere == '.') {
             char lexema[2] = {(char)caractere, '\0'};
 
