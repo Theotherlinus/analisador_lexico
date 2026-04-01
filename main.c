@@ -14,7 +14,7 @@ enum {
 };
 
 #define MAX_TOKENS 1024
-
+//estrutura para armazenar os tokens
 typedef struct {
     char tipo[32];
     char lexema[256];
