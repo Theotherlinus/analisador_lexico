@@ -12,7 +12,7 @@ este projeto implementa um analisador lexico simples em c.
 no terminal, entre na pasta do projeto:
 
 ```bash
-cd "/home/linus-501512/Área de trabalho/2026.1/compiladores/analisador_lexico"
+cd "~/analisador_lexico"
 ```
 
 depois compile:
